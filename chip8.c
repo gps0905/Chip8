@@ -101,6 +101,16 @@ void initialize(Chip8 *chip8){
     }
 
 
+void update_timers(Chip8 *chip8){
+    if (delay_timer > 0) {
+        delay_timer--;
+    }
+
+    if (sound_timer > 0) {
+        sound_timer--;
+    }
+}
+
 
 
 }
